@@ -29,8 +29,10 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
               ),
               textAlign: TextAlign.center,
             ),
+            // shuffle() 使用shuffle()會改變原本的List
+            // 所以model內新增getShuffledAnswers()方法，回傳一個打亂過的的新List
             const SizedBox(height: 30),
-            ...currentQuestion.answers.map((answer) {
+            ...currentQuestion.getShuffledAnswers().map((answer) {
               return AnswerButton(
                 answerText: answer,
                 onTap: () {},
