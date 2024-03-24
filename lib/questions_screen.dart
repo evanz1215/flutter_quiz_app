@@ -16,7 +16,6 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
   int currentQuestionIndex = 0;
 
   answerQuestion(String selectedAnswer) {
-    print(selectedAnswer);
     widget.onSelectAnswer(selectedAnswer);
     setState(() {
       // currentQuestionIndex = currentQuestionIndex + 1;
