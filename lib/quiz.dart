@@ -27,7 +27,7 @@ class _QuizState extends State<Quiz> {
     // 如果選擇的答案數量等於問題數量，則切換到開始畫面
     if (selectedAnswer.length == questions.length) {
       setState(() {
-        selectedAnswer = [];
+        // selectedAnswer = [];
         activeScreen = 'results-screen';
       });
     }
